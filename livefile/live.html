@@ -18,17 +18,17 @@
 }
 #first{
     /* border:1px solid red; */
-    height: 20%;
+    height: 15%;
     width:100%;
 }
 .up{
     border:1px solid red;
-    height:50%;
+    height:45%;
     
 }
 .down{
     border:1px solid green;
-    height: 50%;
+    height: 45%;
     
     display: flex;
     justify-content: space-between;
@@ -39,6 +39,8 @@
     width:50% ;
     display:flex;
     justify-content: space-around;
+    padding-top: 30px;
+    font-size: 20px;
 }
 #Shalfdown{
     border:1px solid blue;
@@ -68,8 +70,8 @@ width:50px;
 background-color: white;
 }
 #select{
-height:30px;
-width:50px;
+height:35px;
+width:200px;
 background-color: white;
 }
 #eye>img{
@@ -86,11 +88,25 @@ width:30px
 }
 #imglink{
     height: 150px;
-    width: 150px;
+    width: 180px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap:10px;
+}
+#imglink>div>img{
+    height: 150px;
+    width: 180px;
+    
+}
+#imglink>div{
+    
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 }
 #second>div>p{
     font-size: 20px;
 }
+
 
     </style>
 </head>
@@ -98,8 +114,9 @@ width:30px
     <div id="container">
         <div id ="first">
             <div class="up">
-                <i class="fa-solid fa-video icon"></i>
-                <h1>Geekbuying Live</h1>
+                <i class="live_name_i live-bg"></i>
+              <h1>Geekbuying Live</h1>
+                
             </div>
             <div class="down">
                 <div id="Fhalfdown">
@@ -125,7 +142,7 @@ width:30px
             </div>
         </div>
         <div id ="second">
-            <div>
+            <div >
                 <p>Klav & Geekbuying Mega vendita di marzo</p>
                 <div id="count">
                     <div id="eye">
@@ -137,15 +154,25 @@ width:30px
                     </div>   
                 </div>
                
-                <iframe width="420" height="315"
-                  src="https://www.youtube.com/watch?v=5oBZzg2KUGE">
-                 </iframe>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/5oBZzg2KUGE"
+                 title="YouTube video player"
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                   allowfullscreen>
+                </iframe>
 
                <div id="imglink">
-                   <img src="https://img.gkbcdn.com/s3/p/2019-10-24/tronsmart-element-t6-max-60w-bluetooth-5-0-nfc-speaker-black-1574132858241.jpg"/>
-                   <img src="https://img.gkbcdn.com/p/2021-01-29/acgam-et225e-electric-three-stage-legs-standing-desk-frame-black-1611908579268._w500_.jpg"/>
-                   <img src="https://www.teamblock3d.com/1531-medium_default/hornet-artillery-3d-printer-220x220x250mm.jpg"/>
-               </div>
+                   <div>
+                        <img src="https://img.gkbcdn.com/s3/p/2019-10-24/tronsmart-element-t6-max-60w-bluetooth-5-0-nfc-speaker-black-1574132858241.jpg"/>
+                   </div>
+                    <div>
+                        <img src="https://img.gkbcdn.com/p/2021-01-29/acgam-et225e-electric-three-stage-legs-standing-desk-frame-black-1611908579268._w500_.jpg"/>
+                    </div>
+                    <div>
+                        <img src="https://www.teamblock3d.com/1531-medium_default/hornet-artillery-3d-printer-220x220x250mm.jpg"/>
+                    </div>
+                    </div>
                    
                    
             </div>
@@ -161,14 +188,25 @@ width:30px
                 </div>   
             </div>
            
-            <iframe width="420" height="315"
-              src="https://youtu.be/5oBZzg2KUGE">
-             </iframe>
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/watch?v=YYroRUsCiuI"
+             title="YouTube video player"
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+               allowfullscreen>
+            </iframe>
 
            <div id="imglink">
+               
+             <div>
                <img src="https://www.teamblock3d.com/1531-medium_default/hornet-artillery-3d-printer-220x220x250mm.jpg"/>
+             </div>
+             <div>
                <img src="https://img.gkbcdn.com/s3/p/2021-12-22/SCULPFUN-S9-Laser-Engraver-481991-0.jpg"/>
+             </div>
+             <div>
                <img src="https://img.gkbcdn.com/s3/p/2021-07-27/Tronsmart-Battle-463073-0.jpg"/>
+             </div>
            </div>
            </div>
            <div>
@@ -188,9 +226,15 @@ width:30px
              </iframe>
 
            <div id="imglink">
+             <div>
                <img src="https://img.gkbcdn.com/s3/p/2021-05-27/MECOOL-KM2-Netflix-4K-Android-TV-4K-TV-BOX-459862-0.jpg"/>
+             </div>
+             <div>
                <img src="https://img.gkbcdn.com/s3/p/2021-07-16/JIMMY-HW8-Pro-Cordless-Wireless-Wet-Dry-Smart-Vacuum-Cleaner-461370-1.jpg"/>
+             </div>
+             <div>
                <img src="https://img.gkbcdn.com/s3/p/2020-01-09/Tronsmart-element-T6-plus-Upgrade-Black-895558-.jpg"/>
+             </div>
            </div>
            </div>
            <div>
@@ -210,9 +254,15 @@ width:30px
              </iframe>
 
            <div id="imglink">
+             <div>
                <img src="https://img.gkbcdn.com/s3/p/2020-05-05/viomi-v3-smart-robot-vacuum-cleaner-eu-version-1588658951509.jpg"/>
+             </div>
+             <div>
                <img src="https://www.geekmaxi.com/img/p/1/3/9/7/8/13978-thickbox_default.jpg"/>
+             </div>
+             <div>
                <img src="https://img.gkbcdn.com/s3/p/2020-04-27/Tronsmart-Onyx-Ace-Bluetooth-5-0-TWS-Earphones-Blcak-902398-.jpg"/>
+             </div>
            </div>
            </div>
            <div>
@@ -232,9 +282,15 @@ width:30px
              </iframe>
 
            <div id="imglink">
+             <div>
                <img src="https://robacinese.it/wp-content/uploads/thumbs_dir/dreame-t10-handheld-cordless-vacuum-cleaner-20000pa-suction-2500mah-battery-p5xp9w6h2ygoa9pg74oxf6mu76kf0m0u9f57nxwpzc.jpg"/>
+             </div> 
+             <div>
                <img src="https://img.gkbcdn.com/s3/p/2020-01-09/Tronsmart-element-T6-plus-Upgrade-Black-895558-.jpg"/>
+             </div>
+             <div>  
                <img src="https://images.idgesg.net/images/article/2021/02/proscenic-p11-2-copy-100877417-orig.jpg"/>
+             </div>
            </div>
            </div>
            <div>
@@ -254,9 +310,15 @@ width:30px
              </iframe>
 
            <div id="imglink">
+             <div>
                <img src="https://img.gkbcdn.com/p/2020-11-28/xiaomi-jimmy-jv85-pro-cordless-handheld-vacuum-cleaner---purple-1606560899187._w500_.jpg"/>
+             </div>
+             <div> 
                <img src="https://img.gkbcdn.com/s3/p/2019-10-18/jimmy-f6-1800w-electric-hair-dryer-ruby-red-1574242677437.jpg"/>
+             </div>
+             <div>
                <img src="https://i.pinimg.com/originals/ca/14/e1/ca14e11ec024a56bff103bf93efe5e3b.jpg"/>
+             </div>
            </div>
            </div>
            <div>
@@ -276,10 +338,16 @@ width:30px
              </iframe>
 
            <div id="imglink">
+             <div>
                <img src="https://img.gkbcdn.com/p/2021-07-15/tronsmart-onyx-apex-bluetooth-5-2-tws-activenoise-cancelling-earphones-1626338047052._w500_.jpg"/>
+             </div>
+             <div> 
                <img src="https://img.gkbcdn.com/s3/p/2021-07-27/MINISFOURM-GK50-8GB-256GB-N5030-Windows10-Mini-PC-462995-0.jpg"/>
+             </div>
+             <div> 
                <img src="https://img.gkbcdn.com/s3/p/2019-10-24/tronsmart-element-t6-max-60w-bluetooth-5-0-nfc-speaker-black-1574132858241.jpg"/>
-           </div>
+             </div>
+            </div>
            </div>
            <div>
             <p>Klav & Geekbuying Mega vendita di marzo</p>
@@ -298,10 +366,16 @@ width:30px
              </iframe>
 
            <div id="imglink">
+             <div>
                <img src="https://img.gkbcdn.com/s3/p/2021-07-07/Tronsmart-T6-Pro-45W-Bluetooth-5-0-Speaker-with-LED-Light-461146-0.jpg"/>
+             </div>
+             <div>  
                <img src="https://globalcomputers.pk/wp-content/uploads/2021/07/t2plussquare-600x600.jpg"/>
+             </div>
+             <div> 
                <img src="https://img.gkbcdn.com/s3/p/2021-07-07/tronsmart-force-pro-1625627479845.jpg"/>
-           </div>
+             </div>
+            </div>
            </div>
            <div>
             <p>Klav & Geekbuying Mega vendita di marzo</p>
@@ -320,10 +394,16 @@ width:30px
              </iframe>
 
            <div id="imglink">
+             <div>
                <img src="https://i.pinimg.com/originals/f4/da/00/f4da00f5c4fc31dfed440abf9d55fb8d.jpg"/>
+             </div>
+             <div> 
                <img src="https://i.ebayimg.com/00/s/OTUxWDEwMjQ=/z/hacAAOSwylRhaD64/$_84.JPG"/>
+             </div>
+             <div> 
                <img src="https://img.gkbcdn.com/p/2020-04-09/VIOMI-V9-Wireless-Handheld-Vacuum-Cleaner-Black-901452-._w500_.jpg"/>
-           </div>
+             </div>
+            </div>
            </div>
         </div>
     </div>  
