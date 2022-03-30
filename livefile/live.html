@@ -27,7 +27,7 @@
     
 }
 .down{
-    border:1px solid green;
+    /* border:1px solid green; */
     height: 45%;
     
     display: flex;
@@ -120,7 +120,19 @@ width:30px
             </div>
             <div class="down">
                 <div id="Fhalfdown">
-                    <p>Language:</p>
+                    <tr>
+                        <td><p>Language:</p></td>
+                        <td><select id="select">
+                            <option value="All">All</option>
+                            <option value="Italian">Italian</option>
+                            <option value="Hungarian">Hungarian</option>
+                            <option value="Romanian">Romanian</option>
+                            <option value="Portuguese">Portuguese</option>
+                            <option value="English">English</option>
+                            
+                        </select></td>
+                    </tr>
+                    <!-- <p>Language:</p>
                     <select id="select">
                         <option value="All">All</option>
                         <option value="Italian">Italian</option>
@@ -129,14 +141,16 @@ width:30px
                         <option value="Portuguese">Portuguese</option>
                         <option value="English">English</option>
                         
-                    </select>
+                    </select> -->
                 </div>
                 <div id="Shalfdown">
-                    <p>Live Status:</p>
-                    <button>All</button>
-                    <button>Live</button>
-                    <button>Preview</button>
-                    <button>Replay</button>
+                    <tr>
+                        <td><p>Live Status:</p></td>
+                        <td><button>All</button></td>
+                        <td><button>Live</button></td>
+                        <td><button>Preview</button></td>
+                        <td><button>Replay</button></td>
+                    </tr>
                     
                 </div>
             </div>
